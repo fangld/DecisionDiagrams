@@ -1,1 +1,4 @@
-struct 
+typedef decision_node {
+	
+	
+}
