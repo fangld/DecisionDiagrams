@@ -1,4 +1,0 @@
-typedef decision_node {
-	
-	
-}
