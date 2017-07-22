@@ -1,2 +1,0 @@
-set(LIB_DD decnode.c manager.c comptable.c unitable.c)
-add_library(libdd ${LIB_DD})

@@ -1,2 +1,0 @@
-project(DecisionDiagrams)
-add_subdirectory(src)
