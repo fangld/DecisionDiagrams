@@ -1,19 +1,20 @@
-#ifndef UNITABLE_H
-#define UNITABLE_H
+#ifndef COMPTABLE_H
+#define COMPTABLE_H
 
+#include "base.h"
 #include "decnode.h"
 
 //Data structures
 typedef struct comptable {
-    int *items;
-    int shift_size;
-    int count;
+    uint *items;
+    uint shift_size;
+    uint count;
 } comptable;
 
 //Methods
 void init_comptable(comptable *table);
 void clear_comptable(comptable *table);
 void expand_comptable(comptable *table);
-int find_or_add_comptable(comptable *table, int var_index, int low, int high);
+uint find_or_add_comptable(comptable *table, int var_index, int low, int high);
 
 #endif
