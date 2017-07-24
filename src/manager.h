@@ -27,4 +27,7 @@ bool equiv(manager* manager, uint* f, uint* g);
 bool is_const(manager* manager, uint* f);
 uint* ite(manager* manager, uint* f, uint* g, uint* h);
 
+inline void inc_ref_count(manager* manager, uint* f);
+inline void dec_ref_count(manager* manager, uint* f);
+
 #endif

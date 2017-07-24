@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "decnode.h": "c",
+        "base.h": "c",
+        "unitable.h": "c",
+        "manager.h": "c",
+        "stdlib.h": "c",
+        "comptable.h": "c",
+        "c++config.h": "c"
+    }
+}
