@@ -2,6 +2,7 @@
 #define DECNODE_H
 
 #include <stdlib.h>
+#include "base.h"
 
 //Constants
 #define MAX_SLOTS_COUNT 65536
@@ -10,8 +11,8 @@
 //Data structures
 typedef struct decnode {
     uint var_index;
-    uint low;
-    uint high;
+    addr_t low;
+    addr_t high;
     uint next;
     uint ref_count;
 } decnode;

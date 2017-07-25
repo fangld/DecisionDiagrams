@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/comun/DecisionDiagrams/DecisionDiagrams/src/allocator.c" "/home/comun/DecisionDiagrams/DecisionDiagrams/src/CMakeFiles/libdd.dir/allocator.c.o"
   "/home/comun/DecisionDiagrams/DecisionDiagrams/src/base.c" "/home/comun/DecisionDiagrams/DecisionDiagrams/src/CMakeFiles/libdd.dir/base.c.o"
   "/home/comun/DecisionDiagrams/DecisionDiagrams/src/comptable.c" "/home/comun/DecisionDiagrams/DecisionDiagrams/src/CMakeFiles/libdd.dir/comptable.c.o"
   "/home/comun/DecisionDiagrams/DecisionDiagrams/src/decnode.c" "/home/comun/DecisionDiagrams/DecisionDiagrams/src/CMakeFiles/libdd.dir/decnode.c.o"

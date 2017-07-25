@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+/home/comun/DecisionDiagrams/DecisionDiagrams/src/allocator.c
+stdlib.h
+-
+allocator.h
+/home/comun/DecisionDiagrams/DecisionDiagrams/src/allocator.h
+
+/home/comun/DecisionDiagrams/DecisionDiagrams/src/allocator.h
+stddef.h
+-
+base.h
+/home/comun/DecisionDiagrams/DecisionDiagrams/src/base.h
+decnode.h
+/home/comun/DecisionDiagrams/DecisionDiagrams/src/decnode.h
+
 /home/comun/DecisionDiagrams/DecisionDiagrams/src/base.c
 
 /home/comun/DecisionDiagrams/DecisionDiagrams/src/base.h
@@ -31,6 +45,8 @@ stdlib.h
 /home/comun/DecisionDiagrams/DecisionDiagrams/src/decnode.h
 stdlib.h
 -
+base.h
+/home/comun/DecisionDiagrams/DecisionDiagrams/src/base.h
 
 /home/comun/DecisionDiagrams/DecisionDiagrams/src/manager.c
 manager.h

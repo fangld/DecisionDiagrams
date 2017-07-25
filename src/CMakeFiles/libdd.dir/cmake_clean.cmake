@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/libdd.dir/allocator.c.o"
   "CMakeFiles/libdd.dir/base.c.o"
   "CMakeFiles/libdd.dir/comptable.c.o"
   "CMakeFiles/libdd.dir/decnode.c.o"

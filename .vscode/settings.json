@@ -6,6 +6,7 @@
         "manager.h": "c",
         "stdlib.h": "c",
         "comptable.h": "c",
-        "c++config.h": "c"
+        "c++config.h": "c",
+        "allocator.h": "c"
     }
 }

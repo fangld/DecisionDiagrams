@@ -57,9 +57,33 @@ include src/CMakeFiles/libdd.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/libdd.dir/flags.make
 
+src/CMakeFiles/libdd.dir/allocator.c.o: src/CMakeFiles/libdd.dir/flags.make
+src/CMakeFiles/libdd.dir/allocator.c.o: src/allocator.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/comun/DecisionDiagrams/DecisionDiagrams/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/CMakeFiles/libdd.dir/allocator.c.o"
+	cd /home/comun/DecisionDiagrams/DecisionDiagrams/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libdd.dir/allocator.c.o   -c /home/comun/DecisionDiagrams/DecisionDiagrams/src/allocator.c
+
+src/CMakeFiles/libdd.dir/allocator.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libdd.dir/allocator.c.i"
+	cd /home/comun/DecisionDiagrams/DecisionDiagrams/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/comun/DecisionDiagrams/DecisionDiagrams/src/allocator.c > CMakeFiles/libdd.dir/allocator.c.i
+
+src/CMakeFiles/libdd.dir/allocator.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libdd.dir/allocator.c.s"
+	cd /home/comun/DecisionDiagrams/DecisionDiagrams/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/comun/DecisionDiagrams/DecisionDiagrams/src/allocator.c -o CMakeFiles/libdd.dir/allocator.c.s
+
+src/CMakeFiles/libdd.dir/allocator.c.o.requires:
+
+.PHONY : src/CMakeFiles/libdd.dir/allocator.c.o.requires
+
+src/CMakeFiles/libdd.dir/allocator.c.o.provides: src/CMakeFiles/libdd.dir/allocator.c.o.requires
+	$(MAKE) -f src/CMakeFiles/libdd.dir/build.make src/CMakeFiles/libdd.dir/allocator.c.o.provides.build
+.PHONY : src/CMakeFiles/libdd.dir/allocator.c.o.provides
+
+src/CMakeFiles/libdd.dir/allocator.c.o.provides.build: src/CMakeFiles/libdd.dir/allocator.c.o
+
+
 src/CMakeFiles/libdd.dir/base.c.o: src/CMakeFiles/libdd.dir/flags.make
 src/CMakeFiles/libdd.dir/base.c.o: src/base.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/comun/DecisionDiagrams/DecisionDiagrams/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/CMakeFiles/libdd.dir/base.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/comun/DecisionDiagrams/DecisionDiagrams/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/CMakeFiles/libdd.dir/base.c.o"
 	cd /home/comun/DecisionDiagrams/DecisionDiagrams/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libdd.dir/base.c.o   -c /home/comun/DecisionDiagrams/DecisionDiagrams/src/base.c
 
 src/CMakeFiles/libdd.dir/base.c.i: cmake_force
@@ -83,7 +107,7 @@ src/CMakeFiles/libdd.dir/base.c.o.provides.build: src/CMakeFiles/libdd.dir/base.
 
 src/CMakeFiles/libdd.dir/comptable.c.o: src/CMakeFiles/libdd.dir/flags.make
 src/CMakeFiles/libdd.dir/comptable.c.o: src/comptable.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/comun/DecisionDiagrams/DecisionDiagrams/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/CMakeFiles/libdd.dir/comptable.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/comun/DecisionDiagrams/DecisionDiagrams/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/CMakeFiles/libdd.dir/comptable.c.o"
 	cd /home/comun/DecisionDiagrams/DecisionDiagrams/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libdd.dir/comptable.c.o   -c /home/comun/DecisionDiagrams/DecisionDiagrams/src/comptable.c
 
 src/CMakeFiles/libdd.dir/comptable.c.i: cmake_force
@@ -107,7 +131,7 @@ src/CMakeFiles/libdd.dir/comptable.c.o.provides.build: src/CMakeFiles/libdd.dir/
 
 src/CMakeFiles/libdd.dir/decnode.c.o: src/CMakeFiles/libdd.dir/flags.make
 src/CMakeFiles/libdd.dir/decnode.c.o: src/decnode.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/comun/DecisionDiagrams/DecisionDiagrams/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/CMakeFiles/libdd.dir/decnode.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/comun/DecisionDiagrams/DecisionDiagrams/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/CMakeFiles/libdd.dir/decnode.c.o"
 	cd /home/comun/DecisionDiagrams/DecisionDiagrams/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libdd.dir/decnode.c.o   -c /home/comun/DecisionDiagrams/DecisionDiagrams/src/decnode.c
 
 src/CMakeFiles/libdd.dir/decnode.c.i: cmake_force
@@ -131,7 +155,7 @@ src/CMakeFiles/libdd.dir/decnode.c.o.provides.build: src/CMakeFiles/libdd.dir/de
 
 src/CMakeFiles/libdd.dir/manager.c.o: src/CMakeFiles/libdd.dir/flags.make
 src/CMakeFiles/libdd.dir/manager.c.o: src/manager.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/comun/DecisionDiagrams/DecisionDiagrams/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/CMakeFiles/libdd.dir/manager.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/comun/DecisionDiagrams/DecisionDiagrams/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/CMakeFiles/libdd.dir/manager.c.o"
 	cd /home/comun/DecisionDiagrams/DecisionDiagrams/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libdd.dir/manager.c.o   -c /home/comun/DecisionDiagrams/DecisionDiagrams/src/manager.c
 
 src/CMakeFiles/libdd.dir/manager.c.i: cmake_force
@@ -155,7 +179,7 @@ src/CMakeFiles/libdd.dir/manager.c.o.provides.build: src/CMakeFiles/libdd.dir/ma
 
 src/CMakeFiles/libdd.dir/unitable.c.o: src/CMakeFiles/libdd.dir/flags.make
 src/CMakeFiles/libdd.dir/unitable.c.o: src/unitable.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/comun/DecisionDiagrams/DecisionDiagrams/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/CMakeFiles/libdd.dir/unitable.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/comun/DecisionDiagrams/DecisionDiagrams/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object src/CMakeFiles/libdd.dir/unitable.c.o"
 	cd /home/comun/DecisionDiagrams/DecisionDiagrams/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libdd.dir/unitable.c.o   -c /home/comun/DecisionDiagrams/DecisionDiagrams/src/unitable.c
 
 src/CMakeFiles/libdd.dir/unitable.c.i: cmake_force
@@ -179,6 +203,7 @@ src/CMakeFiles/libdd.dir/unitable.c.o.provides.build: src/CMakeFiles/libdd.dir/u
 
 # Object files for target libdd
 libdd_OBJECTS = \
+"CMakeFiles/libdd.dir/allocator.c.o" \
 "CMakeFiles/libdd.dir/base.c.o" \
 "CMakeFiles/libdd.dir/comptable.c.o" \
 "CMakeFiles/libdd.dir/decnode.c.o" \
@@ -188,6 +213,7 @@ libdd_OBJECTS = \
 # External object files for target libdd
 libdd_EXTERNAL_OBJECTS =
 
+src/libdd.a: src/CMakeFiles/libdd.dir/allocator.c.o
 src/libdd.a: src/CMakeFiles/libdd.dir/base.c.o
 src/libdd.a: src/CMakeFiles/libdd.dir/comptable.c.o
 src/libdd.a: src/CMakeFiles/libdd.dir/decnode.c.o
@@ -195,7 +221,7 @@ src/libdd.a: src/CMakeFiles/libdd.dir/manager.c.o
 src/libdd.a: src/CMakeFiles/libdd.dir/unitable.c.o
 src/libdd.a: src/CMakeFiles/libdd.dir/build.make
 src/libdd.a: src/CMakeFiles/libdd.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/comun/DecisionDiagrams/DecisionDiagrams/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library libdd.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/comun/DecisionDiagrams/DecisionDiagrams/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C static library libdd.a"
 	cd /home/comun/DecisionDiagrams/DecisionDiagrams/src && $(CMAKE_COMMAND) -P CMakeFiles/libdd.dir/cmake_clean_target.cmake
 	cd /home/comun/DecisionDiagrams/DecisionDiagrams/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libdd.dir/link.txt --verbose=$(VERBOSE)
 
@@ -204,6 +230,7 @@ src/CMakeFiles/libdd.dir/build: src/libdd.a
 
 .PHONY : src/CMakeFiles/libdd.dir/build
 
+src/CMakeFiles/libdd.dir/requires: src/CMakeFiles/libdd.dir/allocator.c.o.requires
 src/CMakeFiles/libdd.dir/requires: src/CMakeFiles/libdd.dir/base.c.o.requires
 src/CMakeFiles/libdd.dir/requires: src/CMakeFiles/libdd.dir/comptable.c.o.requires
 src/CMakeFiles/libdd.dir/requires: src/CMakeFiles/libdd.dir/decnode.c.o.requires

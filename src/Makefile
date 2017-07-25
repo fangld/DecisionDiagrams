@@ -125,6 +125,33 @@ libdd/fast:
 	cd /home/comun/DecisionDiagrams/DecisionDiagrams && $(MAKE) -f src/CMakeFiles/libdd.dir/build.make src/CMakeFiles/libdd.dir/build
 .PHONY : libdd/fast
 
+allocator.o: allocator.c.o
+
+.PHONY : allocator.o
+
+# target to build an object file
+allocator.c.o:
+	cd /home/comun/DecisionDiagrams/DecisionDiagrams && $(MAKE) -f src/CMakeFiles/libdd.dir/build.make src/CMakeFiles/libdd.dir/allocator.c.o
+.PHONY : allocator.c.o
+
+allocator.i: allocator.c.i
+
+.PHONY : allocator.i
+
+# target to preprocess a source file
+allocator.c.i:
+	cd /home/comun/DecisionDiagrams/DecisionDiagrams && $(MAKE) -f src/CMakeFiles/libdd.dir/build.make src/CMakeFiles/libdd.dir/allocator.c.i
+.PHONY : allocator.c.i
+
+allocator.s: allocator.c.s
+
+.PHONY : allocator.s
+
+# target to generate assembly for a file
+allocator.c.s:
+	cd /home/comun/DecisionDiagrams/DecisionDiagrams && $(MAKE) -f src/CMakeFiles/libdd.dir/build.make src/CMakeFiles/libdd.dir/allocator.c.s
+.PHONY : allocator.c.s
+
 base.o: base.c.o
 
 .PHONY : base.o
@@ -269,6 +296,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... libdd"
+	@echo "... allocator.o"
+	@echo "... allocator.i"
+	@echo "... allocator.s"
 	@echo "... base.o"
 	@echo "... base.i"
 	@echo "... base.s"
