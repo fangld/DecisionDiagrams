@@ -9,7 +9,7 @@ decnodes_allocator* create_allocator(size_t num_node_slot)
     {
         result->num_nodes_slot = MIN_NUM_NODE_SLOT;
         result->slots_size = MIN_NUM_NODE_SLOT * sizeof(decnode);
-        result->cur_slots_off = 1;
+        result->cur_slot_index = 1;
         result->slots_count = 2;
         result->slots = malloc(MAX_SLOTS_COUNT * sizeof(decnode*));
     
@@ -21,17 +21,42 @@ decnodes_allocator* create_allocator(size_t num_node_slot)
     {
         result->num_nodes_slot = num_node_slot;
         result->slots_size = num_node_slot * sizeof(decnode);
-        result->cur_slots_off = 0;
+        result->cur_slot_index = 0;
         result->slots_count = 1;
         result->slots = malloc(MAX_SLOTS_COUNT * sizeof(decnode*));
     
         //Allocate the memory for the first slot 
         result->slots[0] = malloc(result->slots_size);
+        //result->cur_slot = result->slots[0];
     }
 
-    result->cur_slot = result->slots[result->cur_slots_off];
-    
+    result->cur_slot = result->slots[result->cur_slot_index];
     return result;
+}
+
+decnode* allocate_node(decnodes_allocator *allocator)
+{
+    decnode* result;
+    if (allocator->cur_slot_index != allocator->num_nodes_slot)
+    {
+        result = allocator->cur_slot + allocator->cur_slot_index;
+        allocator->cur_slot_index++;
+    }
+    else
+    {
+        allocator->cur_slot++;
+        allocator->cur_slot = malloc(allocator->slots_size);
+        result = allocator->cur_slot;
+        allocator->cur_slot_index = 1;
+        allocator->slots_count++;
+    }
+    allocator->nodes_count++;
+    return result;
+}
+
+void gc_allocator(decnodes_allocator *allocator)
+{
+    
 }
 
 void clear_allocator(decnodes_allocator *allocator)
@@ -47,20 +72,4 @@ void clear_allocator(decnodes_allocator *allocator)
         free(slots);
         allocator->slots = NULL;
     }    
-}
-
-decnode* allocate_node(decnodes_allocator *allocator)
-{
-    decnode* result;
-    if(allocator->slots_count == allocator->num_nodes_slot)
-    {
-        allocator->slots[allocator->cur_slots_off] = malloc(allocator->slots_size);
-    }
-    allocator->nodes_count++;
-    return result;
-}
-
-void gc_allocator(decnodes_allocator *allocator)
-{
-    
 }
